@@ -1,7 +1,12 @@
 :root {
-  font-family: system-ui, sans-serif;
-  color: #202620;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #202b24;
   background: #f6f5f0;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -9,7 +14,186 @@ body {
 }
 
 main {
-  max-width: 440px;
-  margin: 10vh auto;
+  width: min(100%, 488px);
+  margin: 7vh auto;
   padding: 24px;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 64px;
+  letter-spacing: -4px;
+}
+
+h1 span {
+  color: #386449;
+}
+
+h2,
+h3,
+p {
+  margin: 0 0 16px;
+}
+
+h3 {
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+p,
+footer {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #657365;
+}
+
+.connection,
+.muted,
+footer {
+  color: #657365;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e1e5dc;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+button,
+input {
+  font: inherit;
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd4c9;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+button {
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  background: #315c45;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #9bb892;
+  outline-offset: 3px;
+}
+
+.secondary {
+  background: #f4f6f0;
+  color: #315c45;
+  border-color: #dce4d6;
+}
+
+.full {
+  width: 100%;
+}
+
+.divider {
+  text-align: center;
+  color: #657365;
+  font-size: 13px;
+  margin: 24px 0;
+}
+
+.room-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.code {
+  font: 700 30px ui-monospace, monospace;
+  letter-spacing: 3px;
+  margin: 8px 0;
+}
+
+.code-input {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0e8;
+}
+
+li > span:first-child {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.badge {
+  background: #edf3e7;
+  color: #315c45;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+.error {
+  color: #922f35;
+  background: #fff0ee;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 400px) {
+  main {
+    margin-top: 2vh;
+    padding: 16px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
 }
