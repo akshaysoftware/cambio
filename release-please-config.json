@@ -1,15 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "a6ce5ffa14f6e3a307316729a7e3f74a073d2a98",
   "packages": {
     ".": {
       "release-type": "simple",
       "package-name": "cambio",
+      "initial-version": "0.1.0",
       "include-component-in-tag": false,
       "bump-minor-pre-major": true,
       "extra-files": [
         {
-          "type": "generic",
-          "path": "backend/pom.xml"
+          "type": "xml",
+          "path": "backend/pom.xml",
+          "xpath": "/*[local-name()='project']/*[local-name()='version']"
         }
       ]
     }

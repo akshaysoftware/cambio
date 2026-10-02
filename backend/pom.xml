@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -11,7 +13,7 @@
 
   <groupId>com.cambio</groupId>
   <artifactId>cambio-backend</artifactId>
-  <version>0.0.0</version>
+  <version>0.0.0</version> <!-- x-release-please-version -->
 
   <properties>
     <java.version>25</java.version>
@@ -43,14 +45,9 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-        <groupId>org.assertj</groupId>
-        <artifactId>assertj-core</artifactId>
-        <scope>test</scope>
-    </dependency>
   </dependencies>
 
-  <build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -85,20 +82,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-            <plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>tidy-maven-plugin</artifactId>
-  <version>1.4.1</version>
-  <executions>
-    <execution>
-      <id>validate</id>
-      <phase>validate</phase>
-      <goals>
-        <goal>check</goal>
-      </goals>
-    </execution>
-  </executions>
-</plugin>
 		</plugins>
 	</build>
 </project>
