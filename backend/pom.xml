@@ -16,7 +16,7 @@
   <properties>
     <java.version>25</java.version>
     <fmt-maven-plugin.version>2.29</fmt-maven-plugin.version>
-    <google-java-format.version>1.36.1</google-java-format.version>
+    <google-java-format.version>1.37.0</google-java-format.version>
     <lombok.version>1.18.48</lombok.version>
   </properties>
 
